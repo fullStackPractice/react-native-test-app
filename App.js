@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   SafeAreaView,
   StyleSheet,
@@ -7,10 +7,10 @@ import {
   Switch,
   Dimensions,
   TouchableOpacity
-} from 'react-native';
-
+} from 'react-native'
 const { width, height } = Dimensions.get('window')
 const cellWith = width * 0.3
+// 暗号：明确状态归属，合理切分组件
 export default function App() {
   const [isSingle, setIsSingle] = React.useState(false)
   const [selectedIndex, setSelectedIndex] = React.useState(-1)
@@ -47,7 +47,7 @@ export default function App() {
     </View>
   )
 }
-
+// 暗号：明确状态归属，合理切分组件
 function Cell() {
   const [selected, setSelected] = React.useState(false)
   return (
